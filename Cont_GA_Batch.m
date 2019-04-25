@@ -1,7 +1,6 @@
 clear
 close all
 tic
-addpath(genpath('~/Documents/MATLAB/Images/altmany-export_fig-c062ae2'));
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% User Parameters %%%%
@@ -308,10 +307,6 @@ for FN = [1] %if doing a batch of images this can be used as one variable in the
             for m = 1:Segments
                 plot(FinPath(:,m),'linewidth',4)       
             end
-
-            %Save control parameters and final results from matlab workspade and save figure
-    %         save(sprintf(SaveBase,SR,IC),'Threshold','SegHeight','SegShift','PerCut','NumPath','Mutation','PD','DPA','NumRun','SmCut','FinPath','FinEval')
-    %         export_fig(sprintf(FileBase, IC), '-jpg');
 
             toc
         end
